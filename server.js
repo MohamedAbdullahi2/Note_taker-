@@ -23,6 +23,10 @@ app.get("/api/notes", function (req, res) {
     res.json(sNotes[Number(req.params.id)]);
   });
   
+  app.get("*", function (req, res) {
+    res.sendFile(path.join(pDir, "index.html"));
+  });
+  
 
 
 app.listen(port, function () {
