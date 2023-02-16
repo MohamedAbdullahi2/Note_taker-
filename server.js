@@ -34,7 +34,12 @@ app.get("/api/notes", function (req, res) {
     let nID = savedNotes.length.toString();
     nNote.id = nID;
     sNotes.push(nNote);
-  })
+    fs.writeFileSync("./db/db.json", JSON.stringify(sNotes));
+  console.log("Note saved to db.json. ");
+  res.json(sNotes);
+});
+
+
 
 app.listen(port, function () {
   console.log(`Server listening on port ${port}. At your service!`);
