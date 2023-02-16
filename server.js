@@ -41,6 +41,18 @@ app.get("/api/notes", function (req, res) {
 });
 
 
+app.delete("/api/notes/:id", function (req, res) {
+  let sNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+  const noteId = req.params.id;
+  // use Array.filter to remove the note with the matching id
+  sNotes = sNotes.filter(note => note.id !== noteId);
+  // write the updated notes array back to the db.json file
+  fs.writeFileSync("./db/db.json", JSON.stringify(sNotes));
+  console.log(`Note with ID ${noteId} deleted from db.json.`);
+  res.json(sNotes);
+});
+
+
 
 app.listen(port, function () {
   console.log(`Server listening on port ${port}. At your service!`);
