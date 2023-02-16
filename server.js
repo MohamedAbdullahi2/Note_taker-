@@ -28,6 +28,13 @@ app.get("/api/notes", function (req, res) {
   });
   
 
+  app.post("/api/notes", function (req, res) {
+    let sNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+    let nNote = req.body;
+    let nID = savedNotes.length.toString();
+    nNote.id = nID;
+    sNotes.push(nNote);
+  })
 
 app.listen(port, function () {
   console.log(`Server listening on port ${port}. At your service!`);
