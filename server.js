@@ -6,16 +6,19 @@ const app = express();
 const port = process.env.PORT || 3001;
 const pDir = path.join(__dirname, "/public");
 
-app.use(express.static("public"))
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/notes", function (req, res) {
-    res.sendFile(path.join(pDir, "notes.html"));
+  res.sendFile(path.join(pDir, "notes.html"));
+});
+
+app.get("/api/notes", function (req, res) {
+    res.sendFile(path.join(__dirname, "/db/db.json"));
   });
   
 
-  app.listen(port, function () {
-    console.log(`Server listening on port ${port}. At your service!`);
-  });
-  
+app.listen(port, function () {
+  console.log(`Server listening on port ${port}. At your service!`);
+});
