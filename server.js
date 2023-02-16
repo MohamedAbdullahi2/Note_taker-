@@ -29,9 +29,10 @@ app.get("/api/notes", function (req, res) {
   
 
   app.post("/api/notes", function (req, res) {
+    console.log("I  am in post route");
     let sNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
     let nNote = req.body;
-    let nID = savedNotes.length.toString();
+    let nID = sNotes.length.toString();
     nNote.id = nID;
     sNotes.push(nNote);
     fs.writeFileSync("./db/db.json", JSON.stringify(sNotes));
