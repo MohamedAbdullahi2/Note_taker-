@@ -59,8 +59,6 @@ Search for and connect to your repository.
 Deploy the app to Heroku.
 
 
-License
-The Note-taker App is licensed under the MIT license.
 
 
 
