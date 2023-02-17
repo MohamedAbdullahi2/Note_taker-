@@ -42,6 +42,11 @@ To create a new note, click on the + icon in the top right corner of the page.
 
 To save a note, click on the Save icon in the top right.
   
+# MOCK 
+  
+  ![image](https://user-images.githubusercontent.com/118404373/219524370-fce24c12-ca23-44df-8481-cc1e662e8354.png)
+
+  
   
   # Deployment
   **Heroku**
