@@ -45,6 +45,9 @@ To save a note, click on the Save icon in the top right.
 # MOCK 
   
   ![image](https://user-images.githubusercontent.com/118404373/219524370-fce24c12-ca23-44df-8481-cc1e662e8354.png)
+  
+  ![image](https://user-images.githubusercontent.com/118404373/219535844-4015436d-6e93-49e1-8500-1b74577dcdd9.png)
+
 
   
   
