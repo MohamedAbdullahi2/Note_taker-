@@ -21,12 +21,12 @@ git clone <repository-url>
 
 Navigate to the project directory.
 
-cd note-taker-app
+**cd note-taker-app**
 
 
 Install the required dependencies.
 
-npm install
+**npm install**
 
 
 # Usage
@@ -36,7 +36,7 @@ To use the Note-taker App, follow these steps:
 
 Start the server.
 
-Open your browser and go to http://localhost:3001.
+**Open your browser and go to http://localhost:3001.**
 
 To create a new note, click on the + icon in the top right corner of the page.
 
