@@ -41,6 +41,26 @@ Start the server.
 To create a new note, click on the + icon in the top right corner of the page.
 
 To save a note, click on the Save icon in the top right.
+  
+  
+  # Deployment
+  **Heroku**
+
+  Create a new app on Heroku.
+
+Connect your Heroku app to your GitHub repository.
+
+Go to your Heroku app dashboard.
+  
+Under "Deploy", select "GitHub" as your deployment method.
+  
+Search for and connect to your repository.
+  
+Deploy the app to Heroku.
+
+
+License
+The Note-taker App is licensed under the MIT license.
 
 
 
